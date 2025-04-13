@@ -9,10 +9,8 @@ int main() {
 
     Memory *reader = new Memory(WINDOW_NAME);
 
-    uintptr_t address {0x00F76DD4};
-
-    
-    
+    uintptr_t address {0};
+        
     return 0;
 }
 

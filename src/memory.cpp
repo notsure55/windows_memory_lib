@@ -2,6 +2,7 @@
 #include <iostream>
 
 HANDLE Memory::find_process(LPCSTR name) {
+    
     HWND hWnd = FindWindow(NULL, name);
     
     if (hWnd == NULL) {

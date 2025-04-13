@@ -18,7 +18,7 @@ public:
     T read(uintptr_t address) {
         T buffer;
         if (ReadProcessMemory(hProcess, (LPCVOID)address, &buffer, sizeof(buffer), nullptr) == 0) {
-            fprintf(stderr, "Failed to write to memory. Error code: %d\n", GetLastError());
+            fprintf(stderr, "Failed to read memory. Error code: %d\n", GetLastError());
             exit(EXIT_FAILURE);
         }        
         return buffer;
